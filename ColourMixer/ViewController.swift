@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //Declare variables.
     var redValue = 255
     var greenValue = 255
     var blueValue = 255
-
+    
+    //Link up outlets.
     @IBOutlet weak var redText: UILabel!
     @IBOutlet weak var greenText: UILabel!
     @IBOutlet weak var blueText: UILabel!
     
     
-    
+    //Link up slider.
     @IBAction func redSliderChanged(_ sender: UISlider) {
         redValue = Int(sender.value)
         redText.text = "R: \(redValue)"
@@ -39,17 +41,10 @@ class ViewController: UIViewController {
     }
     
     
+    //Create a changeBackgroundColor function with no input.
     func changeBackgroundColor() {
       view.backgroundColor =  UIColor(red: CGFloat(redValue) / 255, green: CGFloat(greenValue) / 255, blue: CGFloat(blueValue) / 255, alpha: 1)
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     override func viewDidLoad() {
