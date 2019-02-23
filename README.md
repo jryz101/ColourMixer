@@ -1,7 +1,7 @@
-## ColourMixer
+# ColourMixer
 Working with UISlider to create a simple RGB Color Mixer App
 
-# Guide
+## Guide
 1. Working with auto layouts and slider constrains.
 2. Declare 3 variables and set values to Int.
 3. Link up slider and create actions.
